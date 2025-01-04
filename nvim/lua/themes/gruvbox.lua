@@ -3,4 +3,5 @@
 -- https://github.com/morhetz/gruvbox
 return {
 	'morhetz/gruvbox',
+	priority = 1000,
 }

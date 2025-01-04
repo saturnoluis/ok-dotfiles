@@ -2,4 +2,5 @@
 -- https://github.com/rebelot/kanagawa.nvim?tab=readme-ov-file
 return {
 	'rebelot/kanagawa.nvim',
+	priority = 1000,
 }

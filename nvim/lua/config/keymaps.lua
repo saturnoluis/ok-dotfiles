@@ -75,6 +75,9 @@ vim.keymap.set("n", "<leader>cd", vim.lsp.buf.hover,
 vim.keymap.set("n", "<leader>p", ":Neotree reveal<CR>",
     { desc = "Show current buffer in file explorer" }, opts
 )
+vim.keymap.set("n", "<leader>P", ":Neotree toggle<CR>",
+    { desc = "Toggle the file explorer" }, opts
+)
 vim.keymap.set("n", "<leader>b", ":Neotree buffers<CR>",
     { desc = "Show all opened buffers" }, opts
 )

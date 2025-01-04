@@ -8,7 +8,7 @@ return {
 	},
 	opts = {
 		window = {
-			position = "float",
+			position = "left",
 			mappings = {
 				["<tab>"] = "open",
 			},
