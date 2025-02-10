@@ -23,6 +23,11 @@ vim.keymap.set("v", "<leader>l", "<End>",
     { desc = "Select to the end of current line." }, opts
 )
 
+-- Reformat and manipulate text text
+vim.keymap.set("n", "<leader>g", "<leader>vapgw",
+    { desc = "Reformats the current paragraph, adjusting it to the line width" }, opts
+)
+
 -- Split current line in INSERT mode
 vim.keymap.set("i", "<C-k>", "<CR><Esc>O",
     { desc = "Split current line and move cursor in between." }, opts
