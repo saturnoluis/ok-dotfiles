@@ -14,6 +14,7 @@ return {
 				"css_variables",
 				"cssls",
 				"denols",
+				"emmet_language_server",
 				"html",
 				"lua_ls",
 				"markdown_oxide",
@@ -27,6 +28,7 @@ return {
 		require("lspconfig").bashls.setup({})
 		require("lspconfig").css_variables.setup({})
 		require("lspconfig").cssls.setup({})
+		require("lspconfig").emmet_language_server.setup({})
 		require("lspconfig").html.setup({})
 		require("lspconfig").lua_ls.setup({
 			settings = {
