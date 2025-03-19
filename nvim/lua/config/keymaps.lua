@@ -65,6 +65,10 @@ vim.keymap.set("n", "<leader>fi", vim.lsp.buf.implementation,
 vim.keymap.set("n", "<leader>fr", vim.lsp.buf.references,
     { desc = "Find symbol references." }, opts
 )
+vim.keymap.set("n", "<leader>fs", "<cmd>Telescope lsp_document_symbols<CR>",
+	{ desc = "Show document symbols." }, opts
+)
+
 vim.keymap.set("n", "<leader>cr", vim.lsp.buf.rename,
 	{ desc = "Rename symbol." }, opts
 )
