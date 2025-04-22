@@ -21,6 +21,7 @@ return {
 				"pylsp",
 				"somesass_ls",
 				"svelte",
+				"tailwindcss",
 				"ts_ls",
 			},
 		}
@@ -30,21 +31,12 @@ return {
 		require("lspconfig").cssls.setup({})
 		require("lspconfig").emmet_language_server.setup({})
 		require("lspconfig").html.setup({})
-		require("lspconfig").lua_ls.setup({
-			settings = {
-				Lua = {
-					diagnostics = {
-						globals = {
-							"vim",
-						}
-					}
-				}
-			}
-		})
+		require("lspconfig").lua_ls.setup({})
 		require("lspconfig").markdown_oxide.setup({})
 		require("lspconfig").pylsp.setup({})
 		require("lspconfig").somesass_ls.setup({})
 		require("lspconfig").svelte.setup({})
+		require("lspconfig").tailwindcss.setup({})
 		require("lspconfig").ts_ls.setup({})
 	end
 }
