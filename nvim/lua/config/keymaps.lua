@@ -15,6 +15,14 @@ vim.keymap.set("n", "<leader>l", "<End>",
     { desc = "Move cursor to the end of current line." }, opts
 )
 
+-- Set background dark/light
+vim.keymap.set("n", "<leader>td", ":set background=dark<CR>",
+    { desc = "Set background dark" }, opts
+)
+vim.keymap.set("n", "<leader>tl", ":set background=light<CR>",
+    { desc = "Set background light" }, opts
+)
+
 -- Select text in VISUAL mode
 vim.keymap.set("v", "<leader>h", "<Home>",
     { desc = "Select to the start of current line." }, opts
