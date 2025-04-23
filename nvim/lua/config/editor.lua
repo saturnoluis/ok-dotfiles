@@ -27,4 +27,4 @@ vim.opt.textwidth = 80
 -- Disable line wrapping
 vim.opt.wrap = false
 
-vim.cmd.colorscheme "adwaita"
+vim.cmd.colorscheme "gruvbox"

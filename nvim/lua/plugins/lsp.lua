@@ -31,7 +31,18 @@ return {
 		require("lspconfig").cssls.setup({})
 		require("lspconfig").emmet_language_server.setup({})
 		require("lspconfig").html.setup({})
-		require("lspconfig").lua_ls.setup({})
+		require("lspconfig").lua_ls.setup({
+			-- Add "vim" to globals in lua files
+			settings = {
+				Lua = {
+					diagnostics = {
+						globals = {
+							"vim",
+						}
+					}
+				}
+			}
+		})
 		require("lspconfig").markdown_oxide.setup({})
 		require("lspconfig").pylsp.setup({})
 		require("lspconfig").somesass_ls.setup({})
