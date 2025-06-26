@@ -8,7 +8,12 @@
 | ------- | ------------------------------ |
 | :so %   | Reload the current config file |
 
-## How to install
+## Installed plugins
+
+- lazy.nvim - https://lazy.folke.io/
+- nvim-treesitter - https://github.com/nvim-treesitter/nvim-treesitter
+
+## How to install nvim
 
 There are several "official" ways to install neovim. The one I like the most
 and works for me is using the prebuild `tar` file for Linux. 
