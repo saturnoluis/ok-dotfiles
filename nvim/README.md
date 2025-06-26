@@ -12,6 +12,7 @@
 
 - lazy.nvim - https://lazy.folke.io/
 - nvim-treesitter - https://github.com/nvim-treesitter/nvim-treesitter
+- neo-tree - https://github.com/nvim-neo-tree/neo-tree.nvim
 - move - https://github.com/fedepujol/move.nvim
 
 ## How to install nvim
