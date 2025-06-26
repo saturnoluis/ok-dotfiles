@@ -1,3 +1,7 @@
+-- Set leader key
+vim.g.mapleader = " "
+vim.g.maplocalleader = "\\"
+
 -- UI Colorscheme
 vim.cmd.colorscheme "darkblue"
 
