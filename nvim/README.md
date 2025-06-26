@@ -1,4 +1,12 @@
-# My NEOVIM config (from scratch)
+# My "Ok" NEOVIM config
+
+## About this
+
+## Handy commands
+
+| Command | Description                    |
+| ------- | ------------------------------ |
+| :so %   | Reload the current config file |
 
 ## How to install
 
