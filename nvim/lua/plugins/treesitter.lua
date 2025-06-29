@@ -1,5 +1,5 @@
--- nvim-treesitter: Programming language parser and syntax highlighter for nvim
--- https://github.com/nvim-treesitter/nvim-treesitter
+-- nvim-treesitter: https://github.com/nvim-treesitter/nvim-treesitter
+-- Programming language parser and syntax highlighter for nvim
 
 return {
 	"nvim-treesitter/nvim-treesitter",

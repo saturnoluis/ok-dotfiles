@@ -1,5 +1,5 @@
--- telescope.nvim is a highly extendable fuzzy finder over lists.
--- https://github.com/nvim-telescope/telescope.nvim
+-- telescope: https://github.com/nvim-telescope/telescope.nvim
+-- A highly extendable fuzzy finder over lists.
 
 return {
     'nvim-telescope/telescope.nvim',

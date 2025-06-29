@@ -1,5 +1,5 @@
--- Neo-tree.nvim - Browse the file system
--- https://github.com/nvim-neo-tree/neo-tree.nvim
+-- neo-tree: https://github.com/nvim-neo-tree/neo-tree.nvim
+-- Browse the file system
 
 return {
 	"nvim-neo-tree/neo-tree.nvim",

@@ -1,5 +1,5 @@
--- nvim-cmp: Minimal LSP-only autocompletion for Neovim
--- https://github.com/hrsh7th/nvim-cmp
+-- nvim-cmp: https://github.com/hrsh7th/nvim-cmp
+-- Minimal LSP-only autocompletion for Neovim
 
 return {
 	'hrsh7th/nvim-cmp',
