@@ -29,7 +29,17 @@ lazy.nvim: https://lazy.folke.io/
 
 ## Mason LSP servers used
 
+Check the following link for more information:
+https://github.com/neovim/nvim-lspconfig/tree/master/lsp
+
+**Configured LSP servers:**
+
+These are the LSP servers I have configured in my neovim setup, each of them
+need to be manually installed using the `:Mason` command in neovim or following
+the instructions located in each of the files located in the `lsp` folder.
+
 - emmet-ls
+- eslint
 - html-lsp
 - lua-language-server
 
