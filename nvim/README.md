@@ -15,15 +15,16 @@ lazy.nvim: https://lazy.folke.io/
 
 ---
 
-- nvim-cmp: https://github.com/hrsh7th/nvim-cmp
+- copilot: https://github.com/github/copilot.vim
 - cutlass: https://github.com/gbprod/cutlass.nvim
 - git-blame: https://github.com/f-person/git-blame.nvim
 - gitsigns: https://github.com/lewis6991/gitsigns.nvim
 - mason: https://github.com/mason-org/mason.nvim
 - move: https://github.com/fedepujol/move.nvim
 - neo-tree: https://github.com/nvim-neo-tree/neo-tree.nvim
-- telescope: https://github.com/nvim-telescope/telescope.nvim
+- nvim-cmp: https://github.com/hrsh7th/nvim-cmp
 - nvim-treesitter: https://github.com/nvim-treesitter/nvim-treesitter
+- telescope: https://github.com/nvim-telescope/telescope.nvim
 
 ---
 
