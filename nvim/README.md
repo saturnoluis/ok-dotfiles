@@ -54,8 +54,13 @@ https://github.com/neovim/neovim/blob/master/INSTALL.md
 
 ```bash
 sudo rm -rf /opt/nvim
+# This is not necessary if you are installing neovim for the first time.
+
 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz
+# The -LO flag tells curl to follow redirects and save the file with the same name
+
 sudo tar -C /opt -xzf nvim-linux64.tar.gz
+# The -C flag stands for "change directory" and -xzf tells tar to extract the file
 ```
 
 After this step, you should add the binary to your PATH. (This path is already
