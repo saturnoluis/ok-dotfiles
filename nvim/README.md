@@ -11,11 +11,11 @@ lazy.nvim: https://lazy.folke.io/
 
 **Plugins:**
 
-- adwaita: https://github.com/Mofiqul/adwaita.nvim
 - copilot: https://github.com/github/copilot.vim
 - cutlass: https://github.com/gbprod/cutlass.nvim
 - git-blame: https://github.com/f-person/git-blame.nvim
 - gitsigns: https://github.com/lewis6991/gitsigns.nvim
+- kanagawa: https://github.com/rebelot/kanagawa.nvim
 - mason: https://github.com/mason-org/mason.nvim
 - move: https://github.com/fedepujol/move.nvim
 - neo-tree: https://github.com/nvim-neo-tree/neo-tree.nvim
