@@ -2,18 +2,14 @@
 
 ## About this
 
-## Handy commands
-
-| Command | Description                    |
-| ------- | ------------------------------ |
-| :so %   | Reload the current config file |
+--------------------------------------------------------------------------------
 
 ## Installed plugins
 
 **Plugin Manager**
 lazy.nvim: https://lazy.folke.io/
 
----
+**Plugins:**
 
 - copilot: https://github.com/github/copilot.vim
 - cutlass: https://github.com/gbprod/cutlass.nvim
@@ -25,8 +21,6 @@ lazy.nvim: https://lazy.folke.io/
 - nvim-cmp: https://github.com/hrsh7th/nvim-cmp
 - nvim-treesitter: https://github.com/nvim-treesitter/nvim-treesitter
 - telescope: https://github.com/nvim-telescope/telescope.nvim
-
----
 
 ## Mason LSP servers used
 
@@ -43,6 +37,8 @@ the instructions located in each of the files located in the `lsp` folder.
 - eslint
 - html-lsp
 - lua-language-server
+
+--------------------------------------------------------------------------------
 
 ## How to install nvim
 
@@ -76,18 +72,46 @@ Finally make a symbolic link to use this repo as the config folder for neovim:
 ln -s ~/Repos/ok-configs/nvim ~/.config/nvim
 ```
 
+--------------------------------------------------------------------------------
+
 ## Required system dependencies for this neovim config
 
+- **Lua and LuaRocks**
+
 ```bash
-## Fedora dnf commands
-sudo dnf install curl -y
-sudo dnf install fd-find -y
-sudo dnf install git -y
-sudo dnf install nodejs
-sudo dnf install ripgrep -y
-sudo dnf install tree-sitter-cli
-sudo dnf install xclip -y
+sudo apt install lua5.4 luarocks -y     # Ubuntu
+sudo dnf install lua lua-luarocks -y    # Fedora
+sudo pacman -S lua luarocks --noconfirm # Arch Linux
 ```
+
+- **ripgrep** - A fast text search tool, used by telescope.nvim.
+
+```bash
+sudo apt install ripgrep -y        # Ubuntu
+sudo dnf install ripgrep -y        # Fedora
+sudo pacman -S ripgrep --noconfirm # Arch Linux
+```
+
+- **tree-sitter** - A parser generator tool and an incremental parsing library.
+
+```bash
+sudo apt install tree-sitter-cli -y    # Ubuntu
+sudo dnf install tree-sitter-cli -y    # Fedora
+sudo pacman -S tree-sitter --noconfirm # Arch Linux
+```
+
+- **fd** - A simple, fast and user-friendly alternative to `find`.
+
+```bash
+sudo apt install fd-find -y   # Ubuntu
+sudo dnf install fd-find -y   # Fedora
+sudo pacman -S fd --noconfirm # Arch Linux
+```
+
+Maybe?????
+sudo dnf install xclip -y
+
+--------------------------------------------------------------------------------
 
 ## What I like most about neovim
 
@@ -98,7 +122,15 @@ sudo dnf install xclip -y
 - Terminal-based.
 - Customizable (DIY).
 
-## Cheatsheet
+--------------------------------------------------------------------------------
+
+## Handy commands
+
+| Command | Description                    |
+| ------- | ------------------------------ |
+| :so %   | Reload the current config file |
+
+## Nvim Cheatsheet
 
 ### Insert mode
 
