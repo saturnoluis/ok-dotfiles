@@ -11,6 +11,7 @@ lazy.nvim: https://lazy.folke.io/
 
 **Plugins:**
 
+- adwaita: https://github.com/Mofiqul/adwaita.nvim
 - copilot: https://github.com/github/copilot.vim
 - cutlass: https://github.com/gbprod/cutlass.nvim
 - git-blame: https://github.com/f-person/git-blame.nvim

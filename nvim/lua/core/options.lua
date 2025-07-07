@@ -1,5 +1,5 @@
 -- UI Colorscheme
-vim.cmd.colorscheme "kanagawa"
+vim.cmd.colorscheme "adwaita"
 
 -- UI & Visuals
 vim.opt.colorcolumn = "+1"        -- Highlight column after textwidth
