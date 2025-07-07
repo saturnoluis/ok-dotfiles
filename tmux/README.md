@@ -29,7 +29,7 @@ but what I ussally do is create a symlink of the tmux folder in this repo to the
 .config folder in my home directory.
 
 ```bash
-ln -s ~/<path_to_repo>/ok-dotfiles/tmux/dot.tmux.conf ~/.config/tmux
+ln -s ~/<path_to_repo>/ok-dotfiles/tmux ~/.config/tmux
 ```
 
 This config file uses the awesome-tmux plugin manager, it is already set up in

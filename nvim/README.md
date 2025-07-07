@@ -69,7 +69,7 @@ export PATH="/opt/nvim-linux64/bin:$PATH"
 Finally make a symbolic link to use this repo as the config folder for neovim:
 
 ```bash
-ln -s ~/Repos/ok-configs/nvim ~/.config/nvim
+ln -s ~/<path_to_repo>/ok-dotfiles/nvim ~/.config/nvim
 ```
 
 --------------------------------------------------------------------------------
