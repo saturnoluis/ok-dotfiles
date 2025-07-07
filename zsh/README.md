@@ -37,6 +37,6 @@ After cloning this repository, you can use my `.zshrc` file by copying it to
 your home directory:
 
 ```bash
-cp <path_to_repo>/ok-dotfiles/zsh/dot.zshrc ~/.zshrc
+cp ~/<path_to_repo>/ok-dotfiles/zsh/dot.zshrc ~/.zshrc
 ```
 
