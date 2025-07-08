@@ -125,13 +125,16 @@ sudo dnf install xclip -y
 
 --------------------------------------------------------------------------------
 
-## Handy commands
+## Cheatsheet
 
-| Command | Description                    |
-| ------- | ------------------------------ |
-| :so %   | Reload the current config file |
+### Handy commands
 
-## Nvim Cheatsheet
+| Command    | Description                                           |
+| ---------- | ----------------------------------------------------- |
+| :so %      | Reload the current config file                        |
+| :TSInstall | Install a treesitter parser for the current file type |
+
+## Keybindings
 
 ### Insert mode
 
