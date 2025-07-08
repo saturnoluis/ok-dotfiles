@@ -23,7 +23,7 @@
 --- ```
 return {
 	cmd = { 'vscode-html-language-server', '--stdio' },
-	filetypes = { 'html', 'templ', 'njk' },
+	filetypes = { 'html', 'templ', 'njk', 'vue', },
 	root_markers = { 'package.json', '.git' },
 	settings = {},
 	init_options = {
