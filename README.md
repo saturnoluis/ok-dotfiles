@@ -25,32 +25,70 @@ In the "readme" of the repository you can find the "Install & Update Script".
 Simply run it in your terminal, restart the terminal, and then run `nvm use` to
 install whichever version of Node.js you want to use.
 
-## Docker (via snap on Ubuntu)
+## Docker (on Ubuntu)
 
-I only use docker on Ubuntu for work and for it, the simplest method I found to
-install it is via Snap. The snap version also includes docker compose so it's
-pretty convenient.
+I only use docker on Ubuntu for work and for it, the simplest installation
+method I found is just following the steps documented in the official Docker
+documentation for Ubuntu.
 
-Here are the steps:
+**Read**: https://docs.docker.com/engine/install/ubuntu/
+
+Here are the steps, but is important to check the official documentation first
+as this may change over time!
 
 - First, make sure the system is updated.
 
 ```bash
-sudo apt update
-sudo apt upgrade
+sudo apt update && sudo apt upgrade
 ```
 
-- Install Docker via Snap
+- Install pre-requisites (these should be already installed)
 
 ```bash
-sudo snap install docker
+sudo apt-get install ca-certificates curl
+```
+
+- Add the Docker GPG key
+
+```bash
+sudo install -m 0755 -d /etc/apt/keyrings
+```
+
+```bash
+sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+```
+
+```bash
+sudo chmod a+r /etc/apt/keyrings/docker.asc
+```
+
+- Add the Docker repository to APT sources
+
+```bash
+echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+  $(. /etc/os-release && echo "${UBUNTU_CODENAME:-$VERSION_CODENAME}") stable" | \
+  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+```
+
+```bash
+sudo apt update
 ```
 
 - Create the docker group and add your user to it
 
 ```bash
 sudo groupadd docker
+```
+
+```bash
 sudo usermod -aG docker $USER
+```
+
+- Install the Docker packages
+
+```bash
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
 
 - Restart the system, in my experience is better to do shutdown instead of reboot
