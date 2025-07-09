@@ -1,4 +1,4 @@
-# My "Ok" NEOVIM config
+# My neovim config
 
 ## About this
 
@@ -34,8 +34,8 @@ These are the LSP servers I have configured in my neovim setup, each of them
 need to be manually installed using the `:Mason` command in neovim or following
 the instructions located in each of the files located in the `lsp` folder.
 
+- eslint-lsp
 - emmet-ls
-- eslint
 - html-lsp
 - lua-language-server
 
