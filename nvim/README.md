@@ -69,48 +69,59 @@ export PATH="/opt/nvim-linux64/bin:$PATH"
 
 Finally make a symbolic link to use this repo as the config folder for neovim:
 
+**Important:** Before adding the dotfiles configs, is best to install the required
+system and npm dependencies, see instructions below.
+
 ```bash
 ln -s ~/<path_to_repo>/ok-dotfiles/nvim ~/.config/nvim
 ```
 
 --------------------------------------------------------------------------------
 
-## Required system dependencies for this neovim config
+## Required system and npm dependencies for this neovim config
+
+### System 
 
 - **Lua and LuaRocks**
 
 ```bash
-sudo apt install lua5.4 luarocks -y     # Ubuntu
-sudo dnf install lua lua-luarocks -y    # Fedora
-sudo pacman -S lua luarocks --noconfirm # Arch Linux
+sudo apt install lua5.4 luarocks -y  # Ubuntu
+sudo dnf install lua lua-luarocks -y # Fedora
 ```
 
 - **ripgrep** - A fast text search tool, used by telescope.nvim.
 
 ```bash
-sudo apt install ripgrep -y        # Ubuntu
-sudo dnf install ripgrep -y        # Fedora
-sudo pacman -S ripgrep --noconfirm # Arch Linux
-```
-
-- **tree-sitter** - A parser generator tool and an incremental parsing library.
-
-```bash
-sudo apt install tree-sitter-cli -y    # Ubuntu
-sudo dnf install tree-sitter-cli -y    # Fedora
-sudo pacman -S tree-sitter --noconfirm # Arch Linux
+sudo apt install ripgrep -y # Ubuntu
+sudo dnf install ripgrep -y # Fedora
 ```
 
 - **fd** - A simple, fast and user-friendly alternative to `find`.
 
 ```bash
-sudo apt install fd-find -y   # Ubuntu
-sudo dnf install fd-find -y   # Fedora
-sudo pacman -S fd --noconfirm # Arch Linux
+sudo apt install fd-find -y # Ubuntu
+sudo dnf install fd-find -y # Fedora
 ```
 
-Maybe?????
-sudo dnf install xclip -y
+### NPM
+
+- **vscode-langservers-extracted** - HTML/CSS/JSON/ESLint lang servers.
+
+```bash
+npm i -g vscode-langservers-extracted
+```
+
+- **Tree-sitter CLI** - Allows to use tree-sitter from the command line.
+
+```bash
+npm i -g tree-sitter-cli
+```
+
+- **emmet-ls** - Emmet support based on LSP
+
+```bash
+npm i -g emmet-ls
+```
 
 --------------------------------------------------------------------------------
 

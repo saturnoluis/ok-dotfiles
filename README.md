@@ -4,16 +4,15 @@
 
 I install these programs using the default package manager of the OS.
 
-- `curl` - command line tool for transferring data with URLs
-- `git` - distributed version control system
-- `ssh` - secure shell client for remote connections
-- `vim` - text editor to complement nvim (which I install using other method)
+- `curl`   - command line tool for transferring data with URLs
+- `git`    - distributed version control system
+- `ranger` - terminal file manager
+- `ssh`    - secure shell client for remote connections
+- `vim`    - text editor
 
 --------------------------------------------------------------------------------
 
-## Development tools that I use
-
-## Node.js (via nvm)
+## How to install Node.js (via nvm)
 
 I like to install node using `nvm` (Node Version Manager). To install it follow
 the instructions in the official github repository.
@@ -25,7 +24,25 @@ In the "readme" of the repository you can find the "Install & Update Script".
 Simply run it in your terminal, restart the terminal, and then run `nvm use` to
 install whichever version of Node.js you want to use.
 
-## Docker (on Ubuntu)
+--------------------------------------------------------------------------------
+
+## How to install opencode-ai
+
+`opencode` is an AI coding agent built for the terminal.
+In this configuration, it integrates with tmux, see tmux.conf to see the
+keybinding to open and interact with opencode.
+
+To install open code, first install node and npm then run:
+
+```bash
+npm install -g opencode-ai
+```
+
+Read more here: https://opencode.ai
+
+--------------------------------------------------------------------------------
+
+## How to install Docker (on Ubuntu)
 
 I only use docker on Ubuntu for work and for it, the simplest installation
 method I found is just following the steps documented in the official Docker
@@ -107,20 +124,6 @@ docker run hello-world
 
 --------------------------------------------------------------------------------
 
-## Other tools that I use
-
-### ranger - a terminal file manager
-
-**Installation:**
-
-```bash
-sudo apt install ranger # Ubuntu/Debian
-sudo dnf install ranger # Fedora
-sudo pacman -S ranger   # Arch Linux
-```
-
---------------------------------------------------------------------------------
-
 ## Other important stuff to remember
 
 ### Configure git
@@ -143,5 +146,3 @@ git config --global core.editor "nvim"
 ```bash
 git config --global init.defaultBranch main
 ```
-
-
