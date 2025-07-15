@@ -130,3 +130,16 @@ git config --global core.editor "nvim"
 ```bash
 git config --global init.defaultBranch main
 ```
+
+### Install nerd fonts
+
+The kitty config and the neo-tree plugin require the following nerd fonts to be
+installed:
+
+- [Fira Code Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/FiraCode.zip)
+- [Symbols Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/NerdFontsSymbolsOnly.zip)
+
+More here: https://www.nerdfonts.com/
+
+To install them, simply download the zip files and extract them to your
+`~/.local/share/fonts` folder.
