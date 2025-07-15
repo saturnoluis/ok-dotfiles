@@ -26,22 +26,6 @@ install whichever version of Node.js you want to use.
 
 --------------------------------------------------------------------------------
 
-## How to install opencode-ai
-
-`opencode` is an AI coding agent built for the terminal.
-In this configuration, it integrates with tmux, see tmux.conf to see the
-keybinding to open and interact with opencode.
-
-To install open code, first install node and npm then run:
-
-```bash
-npm install -g opencode-ai
-```
-
-Read more here: https://opencode.ai
-
---------------------------------------------------------------------------------
-
 ## How to install Docker (on Ubuntu)
 
 I only use docker on Ubuntu for work and for it, the simplest installation
