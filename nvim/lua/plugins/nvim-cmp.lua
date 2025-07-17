@@ -15,6 +15,9 @@ return {
 		local cmp = require('cmp')
 
 		cmp.setup({
+			completion = {
+				autocomplete = false, -- This disables automatic triggering
+			},
 			mapping = cmp.mapping.preset.insert({
 				['<C-b>'] = cmp.mapping.scroll_docs(-4),
 				['<C-f>'] = cmp.mapping.scroll_docs(4),
