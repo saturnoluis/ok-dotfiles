@@ -4,11 +4,13 @@
 
 I install these programs using the default package manager of the OS.
 
-- `curl`   - command line tool for transferring data with URLs
-- `git`    - distributed version control system
-- `ranger` - terminal file manager
-- `ssh`    - secure shell client for remote connections
-- `vim`    - text editor
+- `curl`      - command line tool for transferring data with URLs
+- `git`       - distributed version control system
+- `ranger`    - terminal file manager
+- `ssh`       - secure shell client for remote connections
+- `vim`       - text editor
+- `tree`      - show the current working directory as a tree
+- `ripgrep`   - grep program
 
 --------------------------------------------------------------------------------
 

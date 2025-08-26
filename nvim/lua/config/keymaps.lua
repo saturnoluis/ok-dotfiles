@@ -1,20 +1,20 @@
----------------------------------
+-- ===================================================================================
+-- Custom NeoVim Keymaps
+--
+-- ===================================================================================
+
 -- Leader Key Configuration
----------------------------------
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
 -- Set Space as Nop in normal mode to prevent accidental commands
 vim.keymap.set("n", "<Space>", "<Nop>", { noremap = true, silent = true })
 
----------------------------------
 -- Keymap Options
----------------------------------
 local opts = { noremap = true, silent = true }
 
----------------------------------
 -- Core Editor Keybindings (No plugins required)
----------------------------------
+--------------------------------------------------------------------------------------
 
 -- Navigation
 vim.keymap.set("n", "<leader>h", "<Home>",
@@ -36,6 +36,19 @@ vim.keymap.set("n", "<leader>j", ":bprevious<CR>",
 vim.keymap.set("n", "<leader>k", ":bnext<CR>",
 	{ desc = "Switch to next buffer" }, opts)
 
+-- Window navigation
+vim.keymap.set("n", "<C-h>", "<C-w>h",
+	{ desc = "Move to left window" }, opts)
+
+vim.keymap.set("n", "<C-j>", "<C-w>j",
+	{ desc = "Move to bottom window" }, opts)
+
+vim.keymap.set("n", "<C-k>", "<C-w>k",
+	{ desc = "Move to top window" }, opts)
+
+vim.keymap.set("n", "<C-l>", "<C-w>l",
+	{ desc = "Move to right window" }, opts)
+
 -- Text Manipulation
 vim.keymap.set("n", "<leader>g", "vapgw",
 	{ desc = "Reformat current paragraph to text width" }, opts)
@@ -50,9 +63,8 @@ vim.keymap.set("n", "<leader>td", ":set background=dark<CR>",
 vim.keymap.set("n", "<leader>tl", ":set background=light<CR>",
 	{ desc = "Set light background theme" }, opts)
 
----------------------------------
 -- Plugin Keybindings
----------------------------------
+--------------------------------------------------------------------------------------
 
 -- Line Movement
 vim.keymap.set("n", "<A-j>", ":MoveLine(1)<CR>",
@@ -67,7 +79,7 @@ vim.keymap.set("v", "<A-j>", ":MoveBlock(1)<CR>",
 vim.keymap.set("v", "<A-k>", ":MoveBlock(-1)<CR>",
 	{ desc = "Move selected block up" }, opts)
 
----------------------------------
+--------------------------------------------------------------------------------------
 
 -- LSP (Language Server Protocol)
 vim.keymap.set("n", "<leader>fd", vim.lsp.buf.definition,
@@ -91,7 +103,7 @@ vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action,
 vim.keymap.set("n", "<leader>cd", vim.lsp.buf.hover,
 	{ desc = "Show documentation" }, opts)
 
----------------------------------
+--------------------------------------------------------------------------------------
 
 -- Neotree (File Explorer)
 vim.keymap.set("n", "<leader>p", ":Neotree reveal<CR>",
@@ -103,7 +115,7 @@ vim.keymap.set("n", "<leader>P", ":Neotree toggle<CR>",
 vim.keymap.set("n", "<leader>b", ":Neotree buffers<CR>",
 	{ desc = "Show buffer list" }, opts)
 
----------------------------------
+--------------------------------------------------------------------------------------
 
 -- Telescope (Fuzzy Finder)
 vim.keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<CR>",
@@ -114,3 +126,5 @@ vim.keymap.set("n", "<leader>fg", "<cmd>Telescope live_grep<CR>",
 
 vim.keymap.set("n", "<leader>fo", "<cmd>Telescope oldfiles<CR>",
 	{ desc = "Find recently opened files" }, opts)
+
+
