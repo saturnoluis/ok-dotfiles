@@ -1,9 +1,12 @@
 -- ===================================================================================
+-- File:  init.lua
+-- About: Entry point for nvim custom config.
+-- ===================================================================================
 
-require("config.autocmds")
 require("config.keymaps")
 require("config.lazy")
 require("config.options")
+require("config.autocmds")
 
 -- ===================================================================================
 -- .     .       .  .   . .   .   . .    +  .

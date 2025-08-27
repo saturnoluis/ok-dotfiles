@@ -6,7 +6,7 @@
 -- ===================================================================================
 
 -- UI Colorscheme
-vim.cmd.colorscheme("melange")
+vim.cmd.colorscheme("kanagawa")
 
 -- Options
 vim.opt.autochdir        = false            -- Disable auto directory change

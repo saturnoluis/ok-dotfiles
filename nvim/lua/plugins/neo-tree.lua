@@ -1,7 +1,7 @@
 -- ===================================================================================
 -- Plugin: neo-tree.nvim
--- About: Browse the file system and other tree like structures.
--- Link: https://github.com/nvim-neo-tree/neo-tree.nvim
+-- About:  Browse the file system and other tree like structures.
+-- Source: https://github.com/nvim-neo-tree/neo-tree.nvim
 -- ===================================================================================
 
 return {
