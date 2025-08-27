@@ -105,18 +105,6 @@ vim.keymap.set("n", "<leader>cd", vim.lsp.buf.hover,
 
 --------------------------------------------------------------------------------------
 
--- Neotree (File Explorer)
-vim.keymap.set("n", "<leader>p", ":Neotree reveal<CR>",
-	{ desc = "Reveal current file in explorer" }, opts)
-
-vim.keymap.set("n", "<leader>P", ":Neotree toggle<CR>",
-	{ desc = "Toggle file explorer" }, opts)
-
-vim.keymap.set("n", "<leader>b", ":Neotree buffers<CR>",
-	{ desc = "Show buffer list" }, opts)
-
---------------------------------------------------------------------------------------
-
 -- Telescope (Fuzzy Finder)
 vim.keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<CR>",
 	{ desc = "Find files" }, opts)
