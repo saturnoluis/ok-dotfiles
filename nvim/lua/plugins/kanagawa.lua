@@ -1,14 +1,8 @@
-<<<<<<< HEAD
--- kanagawa: https://github.com/rebelot/kanagawa.nvim
--- NeoVim dark colorscheme inspired by the colors of the famous painting by
--- Katsushika Hokusai
-=======
 -- ===================================================================================
 -- Plugin: kanagawa.nvim
 -- About:  Colorscheme inspired by the famous painting by Katsushika Hokusai
 -- Source: https://github.com/rebelot/kanagawa.nvim
 -- ===================================================================================
->>>>>>> a5b3b82 (add kanagawa theme and neo-tree)
 
 return {
 	"rebelot/kanagawa.nvim",
