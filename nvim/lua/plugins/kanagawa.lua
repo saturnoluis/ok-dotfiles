@@ -20,8 +20,8 @@ return {
 			},
 			colors = {
 				palette = {
-					sumiInk0 = "#000000",
-					dragonBlack3 = "#000000",
+					sumiInk0 = "#0D0C0C",
+					dragonBlack3 = "#0D0C0C",
 				},
 			},
 		})
