@@ -56,13 +56,6 @@ vim.keymap.set("n", "<leader>g", "vapgw",
 vim.keymap.set("i", "<C-k>", "<CR><Esc>O",
 	{ desc = "Split current line and insert new line above" }, opts)
 
--- UI Customization
-vim.keymap.set("n", "<leader>td", ":set background=dark<CR>",
-	{ desc = "Set dark background theme" }, opts)
-
-vim.keymap.set("n", "<leader>tl", ":set background=light<CR>",
-	{ desc = "Set light background theme" }, opts)
-
 -- Plugin Keybindings
 --------------------------------------------------------------------------------------
 
