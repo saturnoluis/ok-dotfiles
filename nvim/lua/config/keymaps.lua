@@ -96,16 +96,3 @@ vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action,
 vim.keymap.set("n", "<leader>cd", vim.lsp.buf.hover,
 	{ desc = "Show documentation" }, opts)
 
---------------------------------------------------------------------------------------
-
--- Telescope (Fuzzy Finder)
-vim.keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<CR>",
-	{ desc = "Find files" }, opts)
-
-vim.keymap.set("n", "<leader>fg", "<cmd>Telescope live_grep<CR>",
-	{ desc = "Live grep in files" }, opts)
-
-vim.keymap.set("n", "<leader>fo", "<cmd>Telescope oldfiles<CR>",
-	{ desc = "Find recently opened files" }, opts)
-
-
