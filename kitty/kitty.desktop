@@ -4,7 +4,7 @@
 Name=Kitty Terminal
 Comment=Powerful, customizable, and fast terminal emulator
 Exec=/home/luis/.local/kitty.app/bin/kitty
-Icon=/home/luis/.config/kitty/kitty-icon.png
+Icon=/home/luis/.config/kitty/kitty-light.png
 Terminal=false
 Type=Application
 Categories=System;TerminalEmulator;
