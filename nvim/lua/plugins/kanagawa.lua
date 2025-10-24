@@ -22,8 +22,9 @@ return {
 			},
 			colors = {
 				palette = {
-					sumiInk0 = "#0D0C0C",
-					dragonBlack3 = "#0D0C0C",
+					-- #0A0A0A matches kitty's kanagawa background color
+					sumiInk0 = "#0A0A0A",
+					dragonBlack3 = "#0A0A0A",
 				},
 			},
 		})
