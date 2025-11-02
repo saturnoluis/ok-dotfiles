@@ -24,6 +24,11 @@ vim.lsp.enable("html");
 -- https://github.com/neovim/nvim-lspconfig/blob/master/lsp/eslint.lua
 vim.lsp.enable("eslint");
 
+-- Emmet
+-- Server: emmet-language-server
+-- https://github.com/neovim/nvim-lspconfig/blob/master/lsp/emmet_language_server.lua
+vim.lsp.enable("emmet_language_server");
+
 -- Lua lang
 -- Server: lua-language-server
 -- https://github.com/neovim/nvim-lspconfig/blob/master/lsp/lua_ls.lua
