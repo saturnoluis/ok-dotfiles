@@ -1,0 +1,52 @@
+# Color theme - Kanagawa
+background = #0A0A0A
+foreground = #DCD7BA
+selection-background = #2D4F67
+selection-foreground = #C8C093
+cursor-color = #C8C093
+palette = 0=#16161D
+palette = 1=#C34043
+palette = 2=#76946A
+palette = 3=#C0A36E
+palette = 4=#7E9CD8
+palette = 5=#957FB8
+palette = 6=#6A9589
+palette = 7=#C8C093
+palette = 8=#727169
+palette = 9=#E82424
+palette = 10=#98BB6C
+palette = 11=#E6C384
+palette = 12=#7FB4CA
+palette = 13=#938AA9
+palette = 14=#7AA89F
+palette = 15=#DCD7BA
+palette = 16=#FFA066
+palette = 17=#FF5D62
+
+background-opacity = 0.75
+
+# Font settings
+font-family = "FiraCode Nerd Font Mono"
+font-size = 14
+adjust-cell-height = 0
+adjust-cell-width = 0
+
+# Window settings
+window-save-state = always
+window-decoration = false
+window-show-tab-bar = never
+maximize = true
+
+# Keybindings
+keybind = f11=toggle_maximize
+keybind = ctrl+shift+l=next_tab
+keybind = ctrl+shift+h=previous_tab
+keybind = alt+1=unbind
+keybind = alt+2=unbind
+keybind = alt+3=unbind
+keybind = alt+4=unbind
+keybind = alt+5=unbind
+keybind = alt+6=unbind
+keybind = alt+7=unbind
+keybind = alt+8=unbind
+keybind = alt+9=unbind
