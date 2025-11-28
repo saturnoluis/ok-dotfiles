@@ -23,12 +23,12 @@ palette = 15=#DCD7BA
 palette = 16=#FFA066
 palette = 17=#FF5D62
 
-background-opacity = 1 
+background-opacity = 0.9
 
 # Font settings
 font-family = "FiraCode Nerd Font Mono"
 font-size = 14
-adjust-cell-height = 0
+adjust-cell-height = 2
 adjust-cell-width = 0
 
 # Window settings
@@ -41,6 +41,7 @@ maximize = true
 keybind = f11=toggle_maximize
 keybind = ctrl+shift+l=next_tab
 keybind = ctrl+shift+h=previous_tab
+keybind = ctrl+m=toggle_fullscreen
 
 keybind = alt+digit_1=unbind
 keybind = alt+digit_2=unbind
