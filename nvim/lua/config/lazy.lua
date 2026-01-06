@@ -29,12 +29,8 @@ require("lazy").setup({
 	install = { colorscheme = { "habamax" } },
 	-- automatically check for plugin updates
 	checker = { enabled = true },
-	keys = {
-		{
-			"<leader>lu",
-			"<cmd>Lazy update<CR>",
-			mode = { "n" },
-			desc = "Update Lazy plugins",
-		},
-	},
 })
+
+-- Keybinding for lazy.nvim commands
+vim.keymap.set("n", "<leader>lu", "<cmd>Lazy update<CR>",
+	{ desc = "Update Lazy plugins" })
