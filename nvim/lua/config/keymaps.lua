@@ -72,27 +72,3 @@ vim.keymap.set("v", "<A-j>", ":MoveBlock(1)<CR>",
 vim.keymap.set("v", "<A-k>", ":MoveBlock(-1)<CR>",
 	{ desc = "Move selected block up" }, opts)
 
---------------------------------------------------------------------------------------
-
--- LSP (Language Server Protocol)
-vim.keymap.set("n", "<leader>fd", vim.lsp.buf.definition,
-	{ desc = "Go to definition" }, opts)
-
-vim.keymap.set("n", "<leader>fi", vim.lsp.buf.implementation,
-	{ desc = "Go to implementation" }, opts)
-
-vim.keymap.set("n", "<leader>fr", vim.lsp.buf.references,
-	{ desc = "Show references" }, opts)
-
-vim.keymap.set("n", "<leader>fs", "<cmd>Telescope lsp_document_symbols<CR>",
-	{ desc = "Search document symbols" }, opts)
-
-vim.keymap.set("n", "<leader>cr", vim.lsp.buf.rename,
-	{ desc = "Rename symbol" }, opts)
-
-vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action,
-	{ desc = "Show code actions" }, opts)
-
-vim.keymap.set("n", "<leader>cd", vim.lsp.buf.hover,
-	{ desc = "Show documentation" }, opts)
-

@@ -16,28 +16,10 @@ lazy.nvim: https://lazy.folke.io/
 - git-blame: https://github.com/f-person/git-blame.nvim
 - gitsigns: https://github.com/lewis6991/gitsigns.nvim
 - kanagawa: https://github.com/rebelot/kanagawa.nvim
-- mason: https://github.com/mason-org/mason.nvim
 - move: https://github.com/fedepujol/move.nvim
 - neo-tree: https://github.com/nvim-neo-tree/neo-tree.nvim
-- nvim-cmp: https://github.com/hrsh7th/nvim-cmp
 - nvim-treesitter: https://github.com/nvim-treesitter/nvim-treesitter
 - telescope: https://github.com/nvim-telescope/telescope.nvim
-
-## Mason LSP servers used
-
-Check the following link for more information:
-https://github.com/neovim/nvim-lspconfig/tree/master/lsp
-
-**Configured LSP servers:**
-
-These are the LSP servers I have configured in my neovim setup, each of them
-need to be manually installed using the `:Mason` command in neovim or following
-the instructions located in each of the files located in the `lsp` folder.
-
-- eslint-lsp
-- emmet-ls
-- html-lsp
-- lua-language-server
 
 --------------------------------------------------------------------------------
 
@@ -110,22 +92,10 @@ sudo dnf install fd-find -y # Fedora
 npm i -g neovim
 ```
 
-- **vscode-langservers-extracted** - HTML/CSS/JSON/ESLint lang servers.
-
-```bash
-npm i -g vscode-langservers-extracted
-```
-
 - **Tree-sitter CLI** - Allows to use tree-sitter from the command line.
 
 ```bash
 npm i -g tree-sitter-cli
-```
-
-- **emmet-ls** - Emmet support based on LSP
-
-```bash
-npm i -g emmet-ls
 ```
 
 --------------------------------------------------------------------------------
