@@ -9,7 +9,7 @@ return {
 	event = "VeryLazy",
 	keys = {
 		{
-			"f",
+			"<leader>f",
 			function() require("flash").jump() end,
 			mode = { "n", "x", "o" },
 			desc = "Search and navigate the code"
