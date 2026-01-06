@@ -31,6 +31,6 @@ require("lazy").setup({
 	checker = { enabled = true },
 })
 
--- Keybinding for lazy.nvim commands
+-- Keybindings
 vim.keymap.set("n", "<leader>lu", "<cmd>Lazy update<CR>",
 	{ desc = "Update Lazy plugins" })
