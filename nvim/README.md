@@ -1,6 +1,29 @@
-# My NEOVIM config (from scratch)
+# My neovim config
 
-## How to install
+## About this
+
+--------------------------------------------------------------------------------
+
+## Installed plugins
+
+**Plugin Manager**
+lazy.nvim: https://lazy.folke.io/
+
+**Plugins:**
+
+- copilot: https://github.com/github/copilot.vim
+- cutlass: https://github.com/gbprod/cutlass.nvim
+- git-blame: https://github.com/f-person/git-blame.nvim
+- gitsigns: https://github.com/lewis6991/gitsigns.nvim
+- kanagawa: https://github.com/rebelot/kanagawa.nvim
+- move: https://github.com/fedepujol/move.nvim
+- neo-tree: https://github.com/nvim-neo-tree/neo-tree.nvim
+- nvim-treesitter: https://github.com/nvim-treesitter/nvim-treesitter
+- telescope: https://github.com/nvim-telescope/telescope.nvim
+
+--------------------------------------------------------------------------------
+
+## How to install nvim
 
 There are several "official" ways to install neovim. The one I like the most
 and works for me is using the prebuild `tar` file for Linux. 
@@ -10,8 +33,13 @@ https://github.com/neovim/neovim/blob/master/INSTALL.md
 
 ```bash
 sudo rm -rf /opt/nvim
+# This is not necessary if you are installing neovim for the first time.
+
 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz
+# The -LO flag tells curl to follow redirects and save the file with the same name
+
 sudo tar -C /opt -xzf nvim-linux64.tar.gz
+# The -C flag stands for "change directory" and -xzf tells tar to extract the file
 ```
 
 After this step, you should add the binary to your PATH. (This path is already
@@ -23,22 +51,54 @@ export PATH="/opt/nvim-linux64/bin:$PATH"
 
 Finally make a symbolic link to use this repo as the config folder for neovim:
 
-```bash
-ln -s ~/Repos/ok-configs/nvim ~/.config/nvim
-```
-
-## Required system dependencies for this neovim config
+**Important:** Before adding the dotfiles configs, is best to install the required
+system and npm dependencies, see instructions below.
 
 ```bash
-## Fedora dnf commands
-sudo dnf install curl -y
-sudo dnf install fd-find -y
-sudo dnf install git -y
-sudo dnf install nodejs
-sudo dnf install ripgrep -y
-sudo dnf install tree-sitter-cli
-sudo dnf install xclip -y
+ln -s ~/<path_to_repo>/ok-dotfiles/nvim ~/.config/nvim
 ```
+
+--------------------------------------------------------------------------------
+
+## Required system and npm dependencies for this neovim config
+
+### System 
+
+- **Lua and LuaRocks**
+
+```bash
+sudo apt install lua5.4 luarocks -y  # Ubuntu
+sudo dnf install lua lua-luarocks -y # Fedora
+```
+
+- **ripgrep** - A fast text search tool, used by telescope.nvim.
+
+```bash
+sudo apt install ripgrep -y # Ubuntu
+sudo dnf install ripgrep -y # Fedora
+```
+
+- **fd** - A simple, fast and user-friendly alternative to `find`.
+
+```bash
+sudo apt install fd-find -y # Ubuntu
+sudo dnf install fd-find -y # Fedora
+```
+
+### NPM
+
+- **neovim** - Nvim msgpack API client and remote plugin provider
+```bash
+npm i -g neovim
+```
+
+- **Tree-sitter CLI** - Allows to use tree-sitter from the command line.
+
+```bash
+npm i -g tree-sitter-cli
+```
+
+--------------------------------------------------------------------------------
 
 ## What I like most about neovim
 
@@ -49,7 +109,18 @@ sudo dnf install xclip -y
 - Terminal-based.
 - Customizable (DIY).
 
+--------------------------------------------------------------------------------
+
 ## Cheatsheet
+
+### Handy commands
+
+| Command    | Description                                           |
+| ---------- | ----------------------------------------------------- |
+| :so %      | Reload the current config file                        |
+| :TSInstall | Install a treesitter parser for the current file type |
+
+## Keybindings
 
 ### Insert mode
 

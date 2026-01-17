@@ -1,111 +1,74 @@
--- Set Space key as the leader key
-vim.g.mapleader = " "
+-- ===================================================================================
+-- Custom NeoVim Keymaps
+--
+-- ===================================================================================
 
--- Default options for keymaps
+-- Leader Key Configuration
+vim.g.mapleader = " "
+vim.g.maplocalleader = "\\"
+
+-- Set Space as Nop in normal mode to prevent accidental commands
+vim.keymap.set("n", "<Space>", "<Nop>", { noremap = true, silent = true })
+
+-- Keymap Options
 local opts = { noremap = true, silent = true }
 
--- Set Space key as Nop
-vim.keymap.set("", "<Space>", "<Nop>", opts)
+-- Core Editor Keybindings (No plugins required)
+--------------------------------------------------------------------------------------
 
--- Move cursor in NORMAL mode
-vim.keymap.set("n", "<leader>h", "<home>",
-    { desc = "Move cursor to the start of current line." }, opts
-)
+-- Navigation
+vim.keymap.set("n", "<leader>h", "<Home>",
+	{ desc = "Move cursor to start of current line" }, opts)
+
 vim.keymap.set("n", "<leader>l", "<End>",
-    { desc = "Move cursor to the end of current line." }, opts
-)
+	{ desc = "Move cursor to end of current line" }, opts)
 
--- Set background dark/light
-vim.keymap.set("n", "<leader>td", ":set background=dark<CR>",
-    { desc = "Set background dark" }, opts
-)
-vim.keymap.set("n", "<leader>tl", ":set background=light<CR>",
-    { desc = "Set background light" }, opts
-)
-
--- Select text in VISUAL mode
 vim.keymap.set("v", "<leader>h", "<Home>",
-    { desc = "Select to the start of current line." }, opts
-)
+	{ desc = "Select to start of current line" }, opts)
+
 vim.keymap.set("v", "<leader>l", "<End>",
-    { desc = "Select to the end of current line." }, opts
-)
+	{ desc = "Select to end of current line" }, opts)
 
--- Reformat and manipulate text text
-vim.keymap.set("n", "<leader>g", "<leader>vapgw",
-    { desc = "Reformats the current paragraph, adjusting it to the line width" }, opts
-)
-
--- Split current line in INSERT mode
-vim.keymap.set("i", "<C-k>", "<CR><Esc>O",
-    { desc = "Split current line and move cursor in between." }, opts
-)
-
--- Change buffers
+-- Buffer Management
 vim.keymap.set("n", "<leader>j", ":bprevious<CR>",
-    { desc = "Show previous buffer." }, opts
-)
+	{ desc = "Switch to previous buffer" }, opts)
+
 vim.keymap.set("n", "<leader>k", ":bnext<CR>",
-    { desc = "Show next buffer." }, opts
-)
+	{ desc = "Switch to next buffer" }, opts)
 
--- Move lines of code
+-- Window navigation
+vim.keymap.set("n", "<C-h>", "<C-w>h",
+	{ desc = "Move to left window" }, opts)
+
+vim.keymap.set("n", "<C-j>", "<C-w>j",
+	{ desc = "Move to bottom window" }, opts)
+
+vim.keymap.set("n", "<C-k>", "<C-w>k",
+	{ desc = "Move to top window" }, opts)
+
+vim.keymap.set("n", "<C-l>", "<C-w>l",
+	{ desc = "Move to right window" }, opts)
+
+-- Text Manipulation
+vim.keymap.set("n", "<leader>g", "vapgw",
+	{ desc = "Reformat current paragraph to text width" }, opts)
+
+vim.keymap.set("i", "<C-k>", "<CR><Esc>O",
+	{ desc = "Split current line and insert new line above" }, opts)
+
+-- Plugin Keybindings
+--------------------------------------------------------------------------------------
+
+-- Line Movement
 vim.keymap.set("n", "<A-j>", ":MoveLine(1)<CR>",
-    { desc = "Move line down in normal mode." }, opts
-)
+	{ desc = "Move current line down" }, opts)
+
 vim.keymap.set("n", "<A-k>", ":MoveLine(-1)<CR>",
-    { desc = "Move line up in normal mode." }, opts
-)
+	{ desc = "Move current line up" }, opts)
+
 vim.keymap.set("v", "<A-j>", ":MoveBlock(1)<CR>",
-    { desc = "Move block down in visual mode." }, opts
-)
+	{ desc = "Move selected block down" }, opts)
+
 vim.keymap.set("v", "<A-k>", ":MoveBlock(-1)<CR>",
-    { desc = "Move block up in visual mode." }, opts
-)
+	{ desc = "Move selected block up" }, opts)
 
--- LSP
-vim.keymap.set("n", "<leader>fd", vim.lsp.buf.definition,
-    { desc = "Find symbol definition." }, opts
-)
-vim.keymap.set("n", "<leader>fi", vim.lsp.buf.implementation,
-    { desc = "Find symbol implementation." }, opts
-)
-vim.keymap.set("n", "<leader>fr", vim.lsp.buf.references,
-    { desc = "Find symbol references." }, opts
-)
-vim.keymap.set("n", "<leader>fs", "<cmd>Telescope lsp_document_symbols<CR>",
-	{ desc = "Show document symbols." }, opts
-)
-
-vim.keymap.set("n", "<leader>cr", vim.lsp.buf.rename,
-	{ desc = "Rename symbol." }, opts
-)
-vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action,
-	{ desc = "Show code actions." }, opts
-)
-vim.keymap.set("n", "<leader>cd", vim.lsp.buf.hover,
-	{ desc = "Show code documentation." }, opts
-)
-
-
--- Neotree
-vim.keymap.set("n", "<leader>p", ":Neotree reveal<CR>",
-    { desc = "Show current buffer in file explorer" }, opts
-)
-vim.keymap.set("n", "<leader>P", ":Neotree toggle<CR>",
-    { desc = "Toggle the file explorer" }, opts
-)
-vim.keymap.set("n", "<leader>b", ":Neotree buffers<CR>",
-    { desc = "Show all opened buffers" }, opts
-)
-
--- Telescope
-vim.keymap.set("n", "<leader>ff", ":Telescope find_files<CR>",
-	{ desc = "Find files by name." }, opts
-)
-vim.keymap.set("n", "<leader>fg", ":Telescope live_grep<CR>",
-	{ desc = "Find files using grep." }, opts
-)
-vim.keymap.set("n", "<leader>fo", ":Telescope oldfiles<CR>",
-	{ desc = "Find recently opened files." }, opts
-)

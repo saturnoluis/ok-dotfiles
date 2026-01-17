@@ -1,10 +1,9 @@
 -- ===================================================================================
--- Plugin: move
--- About: Gain the power to move lines and blocks!
--- Source: https://github.com/fedepujol/move.nvim
+-- Plugin: copilot
+-- About:  Copilot is an AI pair programmer tool that helps you write code.
+-- Source: https://github.com/github/copilot.vim
 -- ===================================================================================
 
 return {
-	'fedepujol/move.nvim',
-	opts = {}
+	"github/copilot.vim",
 }

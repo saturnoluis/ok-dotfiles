@@ -42,8 +42,6 @@ export VISUAL=nvim;
 
 # My paths
 # ******************************************
-export PATH="/home/luis/.cargo/bin:$PATH"
-export PATH="/home/luis/.local/share/bob/nvim-bin:$PATH"
 export PATH="/home/luis/.local/kitty.app/bin:$PATH"
 export PATH="/var/lib/flatpak/exports/bin:$PATH"
 export PATH="/opt/nvim-linux64/bin:$PATH"
@@ -53,7 +51,6 @@ export PATH="/opt/nvim-linux64/bin:$PATH"
 alias hi="echo \"Hello! I'm $(hostname).\nHere's my IP: $(hostname -I | awk '{print $1}')\""
 alias home="clear && cd ~"
 alias open="xdg-open"
-alias work="cd ~/repos && ssh -i ./Dev02DCConnectedSSHKey.pem azureuser@20.51.242.195 -L 5173:localhost:5173"
 
 # Prevent accidental removal
 alias rm="rm -i"
