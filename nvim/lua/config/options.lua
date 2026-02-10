@@ -3,7 +3,7 @@
 -- Add any additional options here
 
 -- Options
-vim.opt.autoformat = false         -- Disable format on save globally
+vim.g.autoformat = false           -- Disable format on save globally
 vim.opt.autoindent = true          -- Enable auto-indenting
 vim.opt.autoread = true            -- Reload files changed outside
 vim.opt.autowrite = false          -- Don't auto-save on buffer switch
