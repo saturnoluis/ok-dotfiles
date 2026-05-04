@@ -21,7 +21,7 @@ zstyle ':omz:update' frequency 13
 # Uncomment the following line to enable command auto-correction.
 ENABLE_CORRECTION="true"
 
-ZSH_TMUX_AUTOSTART="true"
+ZSH_TMUX_AUTOSTART="false"
 ZSH_TMUX_AUTOQUIT="false"
 
 # Which plugins would you like to load?
@@ -36,13 +36,12 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 # ******************************************
 
-# Set nvim as default editor
-export EDITOR=nvim
-export VISUAL=nvim;
+# Set vim as default editor
+export EDITOR=vim
+export VISUAL=vim;
 
 # My paths
 # ******************************************
-export PATH="/home/luis/.local/kitty.app/bin:$PATH"
 export PATH="/var/lib/flatpak/exports/bin:$PATH"
 export PATH="/opt/nvim-linux64/bin:$PATH"
 
