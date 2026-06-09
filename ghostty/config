@@ -1,0 +1,47 @@
+# Ghostty Configuration
+# Migrated from Kitty configuration
+
+# Theme - Auto-switch between light/dark based on system
+theme = light:ok-adwaita-light,dark:ok-adwaita-dark
+
+# Transparency (no blur)
+background-opacity = 0.8
+
+# Window Settings
+window-decoration = auto
+gtk-titlebar = false
+initial-window-width = 1200
+initial-window-height = 800
+
+# Font Settings
+font-family = FiraCode Nerd Font Mono
+font-size = 14
+disable-ligatures = never
+
+# Audio
+audio-bell = false
+
+# Keybindings (matching Kitty configuration)
+keybind = ctrl+shift+f=toggle_fullscreen
+keybind = ctrl+shift+l=next_tab
+keybind = ctrl+shift+h=previous_tab
+keybind = ctrl+shift+comma=set_tab_title
+
+# Additional common keybindings
+keybind = ctrl+shift+n=new_window
+keybind = ctrl+shift+t=new_tab
+keybind = ctrl+shift+w=close_surface
+
+# Mouse Settings
+mouse-hide-while-typing = true
+mouse-scroll-multiplier = 3
+copy-on-select = true
+
+# Clipboard Settings
+clipboard-read = ask
+clipboard-write = allow
+clipboard-paste-protection = true
+clipboard-trim-trailing-spaces = true
+
+# Shell Integration
+shell-integration = detect
