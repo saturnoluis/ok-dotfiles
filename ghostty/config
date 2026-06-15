@@ -56,11 +56,11 @@ keybind = ctrl+shift+w=close_surface
 
 # Mouse Settings
 mouse-hide-while-typing = true
-mouse-scroll-multiplier = 3
+mouse-scroll-multiplier = 2
 copy-on-select = true
 
 # Clipboard Settings
-clipboard-read = ask
+clipboard-read = allow
 clipboard-write = allow
 clipboard-paste-protection = true
 clipboard-trim-trailing-spaces = true
