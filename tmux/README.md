@@ -35,18 +35,10 @@ ln -s ~/<path_to_repo>/ok-dotfiles/tmux ~/.config/tmux
 ### Prerequisites
 
 The config uses the [Tmux Plugin Manager (TPM)](https://github.com/tmux-plugins/tpm)
-and it is already wired up in `tmux.conf`. The plugins are also vendored in the
-`plugins/` folder of this repo, so they work out of the box after the symlink.
-If you start from a clean checkout, make sure TPM is present:
+and it is already wired up in `tmux.conf`. The plugins are included in the
+`plugins/` folder of this repo.
 
-```bash
-git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
-```
-
-Then reload the config (`prefix r`) and install the plugins with `prefix I`.
-
-For more curated plugins and ideas, check out:
-https://github.com/rothgar/awesome-tmux
+Install the plugins with `prefix I`.
 
 ## Cheatsheet
 
