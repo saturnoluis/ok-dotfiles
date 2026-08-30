@@ -1,0 +1,55 @@
+-- ===================================================================================
+-- Custom NeoVim Keymaps
+--
+-- ===================================================================================
+
+-- Leader Key Configuration
+vim.g.mapleader = " "
+vim.g.maplocalleader = "\\"
+
+-- Keymap Options
+local opts = { noremap = true, silent = true }
+
+-- Set Space as Nop in normal mode to prevent accidental commands
+vim.keymap.set("n", "<Space>", "<Nop>", opts)
+
+-- Navigation
+vim.keymap.set("n", "<leader>h", "<Home>",
+	{ desc = "Move cursor to start of current line" }, opts)
+
+vim.keymap.set("n", "<leader>l", "<End>",
+	{ desc = "Move cursor to end of current line" }, opts)
+
+vim.keymap.set("v", "<leader>h", "<Home>",
+	{ desc = "Select to start of current line" }, opts)
+
+vim.keymap.set("v", "<leader>l", "<End>",
+	{ desc = "Select to end of current line" }, opts)
+
+-- Buffer Management
+vim.keymap.set("n", "<leader>j", ":bprevious<CR>",
+	{ desc = "Switch to previous buffer" }, opts)
+
+vim.keymap.set("n", "<leader>k", ":bnext<CR>",
+	{ desc = "Switch to next buffer" }, opts)
+
+-- File Explorer
+vim.keymap.set("n", "<leader>e", ":Ex<CR>",
+	{ desc = "Open file explorer" }, opts)
+
+-- Window navigation
+vim.keymap.set("n", "<C-h>", "<C-w>h",
+	{ desc = "Move to left window" }, opts)
+
+vim.keymap.set("n", "<C-j>", "<C-w>j",
+	{ desc = "Move to bottom window" }, opts)
+
+vim.keymap.set("n", "<C-k>", "<C-w>k",
+	{ desc = "Move to top window" }, opts)
+
+vim.keymap.set("n", "<C-l>", "<C-w>l",
+	{ desc = "Move to right window" }, opts)
+
+-- Copy selection to system clipboard in Visual mode
+vim.keymap.set("v", "y", '"+y',
+    { desc = "Yank selection to system clipboard" }, opts)
