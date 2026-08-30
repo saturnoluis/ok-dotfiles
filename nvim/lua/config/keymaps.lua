@@ -37,6 +37,10 @@ vim.keymap.set("n", "<leader>k", ":bnext<CR>",
 vim.keymap.set("n", "<leader>e", ":Ex<CR>",
 	{ desc = "Open file explorer" }, opts)
 
+-- Browse oldfiles
+vim.keymap.set("n", "<leader>o", ":browse oldfiles<CR>",
+	{ desc = "Browse old files" }, opts)
+
 -- Window navigation
 vim.keymap.set("n", "<C-h>", "<C-w>h",
 	{ desc = "Move to left window" }, opts)
