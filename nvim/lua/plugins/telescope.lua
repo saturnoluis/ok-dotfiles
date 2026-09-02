@@ -24,12 +24,12 @@ return {
         {
             "<leader>fg",
             "<cmd>Telescope live_grep<CR>",
-            desc = "Live grep in files",
+            desc = "Find files using grep",
         },
         {
             "<leader>fo",
             "<cmd>Telescope oldfiles<CR>",
-            desc = "Find recently opened files",
+            desc = "Find old files",
         },
     },
 }
