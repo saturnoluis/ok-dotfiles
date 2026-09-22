@@ -6,5 +6,7 @@
 
 return {
 	"f-person/git-blame.nvim",
-	opts = {},
+	opts = {
+		delay = 5000,
+	},
 }

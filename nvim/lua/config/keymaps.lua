@@ -33,10 +33,6 @@ vim.keymap.set("n", "<leader>j", ":bprevious<CR>",
 vim.keymap.set("n", "<leader>k", ":bnext<CR>",
 	{ desc = "Switch to next buffer" }, opts)
 
--- File Explorer
-vim.keymap.set("n", "<leader>e", ":Ex<CR>",
-	{ desc = "Explore files" }, opts)
-
 -- Window navigation
 vim.keymap.set("n", "<C-h>", "<C-w>h",
 	{ desc = "Move to left window" }, opts)
