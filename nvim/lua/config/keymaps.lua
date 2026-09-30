@@ -49,3 +49,16 @@ vim.keymap.set("n", "<C-l>", "<C-w>l",
 -- Copy selection to system clipboard in Visual mode
 vim.keymap.set("v", "y", '"+y',
     { desc = "Yank selection to system clipboard" }, opts)
+
+-- Search selected text with Telescope live_grep (auto-run)
+vim.keymap.set("v", "<leader>ss", function()
+	local saved_reg = vim.fn.getreg('"')
+	local saved_regtype = vim.fn.getregtype('"')
+	vim.cmd('normal! "vy')
+	local selected = vim.fn.getreg('"')
+	vim.fn.setreg('"', saved_reg, saved_regtype)
+	require("telescope.builtin").live_grep({
+		default_text = selected,
+		initial_mode = "normal",
+	})
+end, { desc = "Search selected text" }, opts)
