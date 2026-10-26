@@ -27,7 +27,7 @@ vim.keymap.set("v", "<leader>l", "<End>",
 	{ desc = "Select to end of current line" }, opts)
 
 -- File Explorer
-vim.keymap.set("n", "<leader>E", ":Ex<CR>",
+vim.keymap.set("n", "<leader>e", ":Ex<CR>",
 	{ desc = "Open default file explorer" }, opts)
 
 -- Buffer Management

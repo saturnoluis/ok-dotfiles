@@ -12,7 +12,7 @@ return {
 	},
 	keys = {
         {
-            "<leader>e",
+            "<leader>E",
             ":NvimTreeToggle<CR>",
             desc = "Explore files",
         },
