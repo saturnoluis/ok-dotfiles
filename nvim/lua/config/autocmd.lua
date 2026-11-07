@@ -6,3 +6,11 @@ vim.api.nvim_create_autocmd("FileType", {
         vim.opt_local.relativenumber = true
     end,
 })
+
+-- HTML tag completion for JSX/TSX
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = { "javascriptreact", "typescriptreact" },
+    callback = function()
+        vim.bo.omnifunc = "emmet#completeTag"
+    end,
+})
